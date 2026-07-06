@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ============================================================
+   DESIGN TOKENS — DezignCamp / Framer Design System
+   ============================================================ */
+@theme {
+  /* Surfaces */
+  --color-canvas:        #090909;
+  --color-surface-1:     #141414;
+  --color-surface-2:     #1c1c1c;
+  --color-hairline:      #262626;
+  --color-hairline-soft: #1a1a1a;
+
+  /* Ink */
+  --color-ink:           #ffffff;
+  --color-ink-muted:     #999999;
+
+  /* Accent */
+  --color-accent-blue:   #0099ff;
+
+  /* Gradients */
+  --color-gradient-magenta: #d44df0;
+  --color-gradient-violet:  #6a4cf5;
+  --color-gradient-orange:  #ff7a3d;
+  --color-gradient-coral:   #ff5577;
+
+  /* Semantic */
+  --color-semantic-success: #22c55e;
+
+  /* Inverse */
+  --color-inverse-canvas: #ffffff;
+  --color-inverse-ink:    #000000;
+
+  /* Radius */
+  --radius-xs:   4px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   15px;
+  --radius-xl:   20px;
+  --radius-xxl:  30px;
+  --radius-pill: 100px;
+}
+
+/* ============================================================
+   BASE RESET
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+html, body {
+  background-color: #090909;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'cv01' 1, 'cv05' 1, 'cv11' 1;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: #141414; }
+::-webkit-scrollbar-thumb { background: #262626; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #999; }
+
+/* Selection */
+::selection { background: rgba(0,153,255,0.2); }
+
+/* Focus */
+:focus-visible { outline: none; box-shadow: 0 0 0 1px rgba(0,153,255,0.4); }
+
+/* Links */
+a { color: #0099ff; text-decoration: none; }
+
+/* ============================================================
+   TYPOGRAPHY SCALE
+   ============================================================ */
+.t-display-xxl { font-size: 110px; font-weight: 500; line-height: 0.85; letter-spacing: -5.5px; }
+.t-display-xl  { font-size: 85px;  font-weight: 500; line-height: 0.95; letter-spacing: -4.25px; }
+.t-display-lg  { font-size: clamp(36px,5vw,62px); font-weight: 500; line-height: 1.0; letter-spacing: -3.1px; }
+.t-display-md  { font-size: 32px;  font-weight: 500; line-height: 1.13; letter-spacing: -1px; }
+.t-headline    { font-size: 22px;  font-weight: 700; line-height: 1.20; letter-spacing: -0.8px; }
+.t-subhead     { font-size: 24px;  font-weight: 400; line-height: 1.30; letter-spacing: -0.01px; }
+.t-body-lg     { font-size: 18px;  font-weight: 400; line-height: 1.30; letter-spacing: -0.18px; }
+.t-body        { font-size: 15px;  font-weight: 400; line-height: 1.30; letter-spacing: -0.15px; }
+.t-body-sm     { font-size: 14px;  font-weight: 500; line-height: 1.40; letter-spacing: -0.14px; }
+.t-caption     { font-size: 13px;  font-weight: 500; line-height: 1.20; letter-spacing: -0.13px; }
+.t-micro       { font-size: 12px;  font-weight: 400; line-height: 1.20; letter-spacing: -0.12px; }
+.t-btn         { font-size: 14px;  font-weight: 500; line-height: 1.0;  letter-spacing: -0.14px; }
