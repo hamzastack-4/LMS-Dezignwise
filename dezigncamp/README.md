@@ -4,7 +4,7 @@ A production-grade, AI-powered Learning Management System built with Next.js 16 
 
 ## 🚀 Live Demo
 
-**App URL:** `https://3000-in7qmy35y28wg9629hg6y-5c13a017.sandbox.novita.ai`
+**App URL:** `Testing Phase`
 
 ---
 
